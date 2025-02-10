@@ -32,8 +32,8 @@ public class Corredor {
     }
 
     public void setImporte_vuelta(double importe_vuelta) {
-        if (importe_vuelta == 0){
-            importe_vuelta = 0.5;
+        if (importe_vuelta < 0.5){
+            this.importe_vuelta= 0.5;
         }else{
         this.importe_vuelta = importe_vuelta;
         }
