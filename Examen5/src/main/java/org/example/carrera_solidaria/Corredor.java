@@ -4,6 +4,7 @@ import java.util.ArrayList;
 import java.util.Arrays;
 
 public class Corredor {
+    // nombre y tipo de las clases
     private String nombre;
     public static int dorsal = 0;
     private ArrayList<String> listaPatrocinadores = new ArrayList<>();
@@ -56,12 +57,10 @@ public class Corredor {
     public static int calcularDorsal(int dorsal) {
         return dorsal++;
     }
+    //metodo para aadir patrocinadores
     public void insertarPatrocinador(String... patros) {
 listaPatrocinadores.addAll(Arrays.asList(patros));
         System.out.println("Nuevos patrocinadores añadidos para el corredor " + nombre);
-    }
-    public void calcularDonacion(){
-
     }
     @Override
     public String toString() {

@@ -1,14 +1,12 @@
 package org.example.carrera_solidaria;
 
 import java.util.ArrayList;
-
+//Nombre y tipo de las clases
 public class Organizador {
     final static String NOMBRE = "IES_MUTXAMEL";
     private String edicion;
     private ArrayList<Corredor> listaCorredores = new ArrayList<>();
 
-    public Organizador(String edicion) {
-    }
 
     public String getEdicion() {
         return edicion;
@@ -26,6 +24,7 @@ public class Organizador {
         this.listaCorredores = listaCorredores;
     }
 
+    //inscribe a un nuevo corredor
     public void inscribir_corredor(Corredor corredor) {
         if (Corredor.dorsal < 700){
             Corredor.dorsal++;
